@@ -1,0 +1,1082 @@
+/*index Generic things*/
+
+html, body{
+    min-height: 120%;
+}
+
+textarea{
+    border: 1px black solid;
+}
+
+#title {
+    font-family: 'Permanent Marker', cursive;
+    color: white;
+}
+
+#sub-title {
+    font-family: 'Coming Soon', cursive;
+    color: white;
+}
+
+#welcome-background{
+    position: absolute;
+    width: 100vw;
+    height: 147%;
+    opacity: 0.8;
+    background-image: url('./background.jpg');
+    /*color: rgb(111, 201, 128)*/
+}
+
+.form-container  {
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, 0);
+    text-align: center;
+    font-family: 'Roboto', cursive;
+    color: white;
+}
+
+.form-container p{
+    margin-top: 0;
+    margin-bottom: 22px;
+}
+
+
+
+
+body {
+    background: whitesmoke;  /* fallback for old browsers */
+
+}
+
+.error-message{
+    color : red;
+    position: relative;
+    top : 8px;
+}
+
+#register-title, #login-title {
+    text-decoration: underline;
+}
+
+
+
+/*Nav Bar*/
+
+#li-container {
+    z-index: 1000;
+    width: 60%;
+    display: flex;
+    justify-content: space-around;
+    right: 20%;
+    position: absolute;
+    list-style-type: none;
+    top: 5px;
+}
+
+#search-input{
+    top: 4px;
+    left: 1%;
+    width: 150px;
+    transform: translate(-50%);
+    z-index: 10000000000;
+    position: relative;
+    display: inline;
+    list-style-type: none;
+}
+
+
+
+#search-image{
+
+    width: 25px;
+    z-index: 100;
+    margin-left: 20px;
+    top: 7px;
+    position: relative;
+
+}
+
+#li-container li{
+    width: 100%;
+    padding-left: 12%;
+}
+
+#li-container li:nth-child(-n+2){
+    border-right: 1px black solid;
+}
+
+#li-container li a{
+    font-family: 'Roboto', cursive;
+    text-decoration: none;
+    color: black;
+    font-size: 18px
+}
+
+#li-container li a:hover {
+    color : darkgrey
+}
+
+#nav-bar-container{
+    z-index: 0;
+    position: absolute;
+    width: 100%;
+    height: 62px;
+    top: 0px;
+    right: 0;
+    /* color: aquamarine; */
+    left: 0;
+    background: #3b5998;
+    opacity: 0.9;
+    display: flex;
+}
+
+#menu{
+    position: absolute;
+    left: 17%;
+    top: 21px;
+}
+
+.menu-link{
+    margin: 22px;
+    font-family: 'Roboto', cursive;
+    color: white;
+    text-decoration: none;
+}
+
+.menu-link:hover{
+    color : black;
+    text-decoration: underline;
+}
+
+
+
+/*Welcome / registration page*/
+
+#big-logo .logo-container{
+    top: 0px;
+    position: relative;
+    left : 50%;
+    transform: translate(-50%, 0%);
+    text-align: center;
+}
+
+#big-logo #title {
+    color : white;
+    font-size : 70px;
+    margin-top: 0;
+}
+
+#big-logo #logo-image{
+    position: relative;
+    width :23%;
+}
+
+#big-logo #sub-title {
+    color :white;
+    font-size : 35px;
+}
+
+#advert{
+    margin-top: 27px;
+}
+
+
+/*#presentation-text {
+    font-family: 'Roboto', cursive;
+    text-align: center;
+    position: relative;
+    background : white;
+    font-weight: 600;
+    padding: 15px;
+    font-size: 20px;
+}*/
+
+
+/*#presentation-text ul {
+    list-style-type: none;
+    padding: 0;
+}
+#presentation-text ul li{
+    list-style-type: none;
+    text-align: center;
+}*/
+
+/*tiny logo page*/
+
+
+#wrap-profilepic-profilemenu{
+    position: absolute;
+    z-index: 2;
+    top: 5px;
+    right: 14%;
+}
+
+#profile-menu {
+    background: #d3d3d3;
+    border: 1px black solid;
+    text-decoration: none;
+    border-radius: 4px;
+    margin-top: 10px;
+    width: 110px;
+    top: 49px;
+    right: 10%;
+    position: absolute;
+}
+
+#profile-menu ul {
+    padding: 0;
+    list-style-type: none;
+}
+
+#profile-menu li {
+    text-align: center;
+    padding: 11px;
+}
+
+.arrow-up {
+    width: 0;
+    height: 0;
+    position: relative;
+    top: -10px;
+    left: 65px;;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid black;
+    border-radius: 2px;
+}
+
+
+#friend-button{
+    border: 1px solid #d3d3d3;
+    background: white;
+    font-family: helvetica;
+    padding: 6px;
+    color: rgb(70,70,70);   
+    border-radius: 3px;
+}
+
+
+#profile-picture-container{
+    right: 34%;
+    width: 48px;
+    position: relative;
+    overflow: hidden;
+    height: 48px;
+    border: 1px solid transparent;
+    border-radius: 30px;
+}
+
+#profile-picture {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+#upload-profile-picture {
+    position: absolute;
+    display: none;
+    text-align: center;
+    right: -50%;
+    transform: translate(-50%);
+    font-family: 'Roboto', cursive;
+    width: 48px;
+    overflow: hidden;
+    height: 48px;
+    margin: 0;
+    top: 11px;
+    font-size: 10px;
+}
+
+#input-file {
+    position: absolute;
+    top: -994px;
+}
+
+#upload-image-button{
+    border : 1px solid darkgrey;
+    border-radius : 4px;
+    padding: 10px;
+    top: 7px;
+    position: relative;
+
+}
+
+#upload-image-button:hover{
+    background: rgb(242, 285, 248);
+
+}
+
+#welcome{
+    position: relative;
+    text-align: center;
+    top: 79px;
+    font-family: 'Roboto', cursive;
+    padding-top: 10px;
+    border-top: 1px black solid;
+    width : 300px;;
+    left: 50%;
+    transform: translate(-50%);
+    font-size: 27px;
+}
+
+#profile-picture-container:hover #upload-profile-picture {
+    display: block;
+
+}
+
+#profile-picture-container:hover img {
+    opacity: 0.3;
+    filter: grayscale(1);
+}
+
+#profile-pic-upload-container{
+    overflow-y: auto;
+    z-index: 9999;
+    position: fixed;
+    width: 100%;
+    min-height: 100vh;
+    background: rgba(0, 0, 0, .7);
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+}
+
+#else-overlay{
+    z-index: 1000;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+    top: -10px;
+    left: -10px;
+    right: -9px;
+}
+
+
+
+#profile-pic-upload {
+    font-family: 'Roboto', cursive;
+    background: white;
+    position: absolute;
+    z-index: 10000;
+    text-align: center;
+    width: 60%;
+    left: 20%;
+    border-radius: 4px;
+    top: 100px;
+    border: 1px black dotted;
+    padding: 10px 0px 30px 0px;
+    margin-bottom: 5%;
+}
+
+
+
+#preview-image {
+    position: relative;
+    margin-top: 35px;
+    max-width: 87%;
+}
+
+#cross-image-upload {
+    position: relative;
+    width: 20px;
+    right : -45%;
+}
+
+
+.profile-menu-link {
+    font-size: 15px;
+    font-family: 'Roboto', cursive;
+    color:black;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    text-decoration: none;
+}
+
+.profile-menu-link:hover{
+    color : rgb(70, 172, 138);
+    text-decoration: underline;
+}
+
+#tiny-logo #title { order: 2; }
+#tiny-logo #logo-image { order: 1; }
+#tiny-logo #sub-title { order: 3; }
+
+#tiny-logo #title {
+    position: absolute;
+    font-family: 'Permanent Marker', cursive;
+    font-size: 22px;
+    right: 3%;
+    top: -1px;
+
+}
+
+#tiny-logo #sub-title {
+    position: absolute;
+    font-family: 'Coming Soon', cursive;
+    font-size: 12px;
+    right: 3%;
+    top : 19px;
+}
+
+#tiny-logo #logo-image{
+    position: absolute;
+    width: 35px;
+    top: 12px;
+    left: 24px;
+}
+
+
+
+/*Profile page */
+
+#profile-page-container {
+    position: relative;
+    top: 105px;
+    width: 80%;
+    left: 10%;
+    padding: 60px;
+    border-top: black 1px solid;
+    border-bottom: black 1px solid;
+}
+
+#profile-page-container #image {
+    position: relative;
+    max-width: 20%;
+    min-width: 180px;
+    float: left;
+    border-radius: 100px;
+    border: 1px solid #d3d3d3;
+}
+
+#profile-page-container #bio {
+    margin-left: 20px;
+    font-family: 'Roboto', cursive;
+    display: inline-block;
+    width: 350px;
+}
+
+#profile-page-container #bio a{
+    margin-top: 16px;
+    display: -webkit-inline-box;
+}
+
+
+#profile-page-container input:hover {
+    color: white;
+    background: rgb(70,70,70);
+}
+
+#profile-page-container #textarea-bio {
+    float: left;
+    margin-left: 15px;
+
+}
+
+#profile-page-container #button {
+    text-decoration: underline;
+    color: darkgrey
+}
+
+
+#profile-page-container #button:hover {
+    background: rgb(70, 172, 138);
+    color:white;
+}
+
+#profile-page-container #submit-button {
+    display: block;
+}
+
+#profile-page-container #submit-button {
+    display: block;
+}
+
+#profile-page-container #submit-button-container {
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+}
+
+#profile-page-container #image-container {
+    position: relative;
+    max-width: 25%;
+    min-width: 200px;
+    float: left;
+
+}
+#profile-page-container #image-overlay {
+    position: relative;
+    max-width: 25%;
+    min-width: 200px;
+    float: left;
+
+}
+
+#image-container:hover #image-overlay {
+    background: black;
+    opacity: 0.15;
+}
+
+#image-container #upload-text {
+    position: absolute;
+    top: 68px;
+    left: 50%;
+    transform: translate(-50%);
+    font-family: 'Roboto', cursive;
+    display: none;
+}
+
+#image-container:hover #upload-text {
+    display: inline;
+    font-size: 20px;
+}
+
+.no-user-url {
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+    display: inline-block;
+    text-align: center;
+    font-size: 30px;
+    font-family: 'Roboto', cursive;
+}
+
+
+/*Friend page*/
+
+#waitingForAnwser-container, #frToAccept-container, #frConfirmed-container{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    position: relative;
+}
+
+.friend-request {
+    text-align: center;
+    height: 195px;
+    margin-bottom: 100px;
+}
+
+#fr-title{
+    font-family: 'Roboto', cursive;
+    font-size: 15px;
+    text-align: center;
+    margin-top: 59px;
+    padding-top: 20px;
+    border-top: 1px black solid;
+    width: 20%;
+    left: 40%;
+    position: relative;
+
+}
+
+.friend-image{
+    height: 100%;
+}
+
+
+.accept-button, .cancel-button{
+    border: 1px black solid;
+    position: relative;
+    background: white;
+    font-family: 'Roboto', cursive;
+}
+
+.accept-button:hover, .cancel-button:hover{
+    background:  darkgrey;
+    color: white;
+}
+
+.friend-name{
+    left: 50%;
+    text-align: center;
+    margin-top: 7px;
+    font-family: 'Roboto', cursive;
+    position: relative;
+    transform: translate(-50%);
+}
+
+/*Online page*/
+
+#online-page{
+    position: relative;
+    top: 102px;
+    display: flex;
+    align-content: space-between;
+    flex-wrap: wrap;
+    justify-content: space-around;;
+}
+
+#online-page div {
+    height: 193px;
+    margin : 30px;
+}
+
+#online-icon{
+    position: absolute;
+    width: 21px;
+    margin: 5px;
+}
+
+#bio #button, #submit-yes-button, #submit-no-button{
+    text-align: center;
+    border: 1px black solid;
+    border-radius: 2px;
+    background: white;
+    color: black;
+    font-family: helvetica;
+    text-decoration: none;
+}
+
+#bio #button {
+    padding: 6px;
+}
+
+
+
+/*This are the search results*/
+#nav-bar-results-container{
+
+    left: 32%;
+    background: white;
+    border: black 1px solid;
+    transform: translate(-50%);
+    width: 203px;
+    padding: 0;
+    margin: 0;
+    padding-bottom: 30px;
+    display: inline-block;
+    position: absolute;
+    z-index: 10;
+    top: 50px;
+}
+
+#nav-bar-results-responsive-container{
+    left: 50%;
+    background: white;
+    border: black 1px solid;
+    transform: translate(-50%);
+    width: 203px;
+    padding: 0;
+    margin: 0;
+    padding-bottom: 30px;
+    display: inline-block;
+    position: absolute;
+    z-index: 10;
+    top: 130px;
+}
+
+.search-results-container .search-image{
+    width: 38px;
+    top: 65px;
+}
+
+.search-results-container  .search-name{
+    font-family: 'Roboto', cursive;
+    margin-left: 12px;
+    margin: 8px;
+    font-family: 'Roboto', cursive;
+    width: 150px;
+}
+
+.search-results-container{
+    display: -webkit-inline-box;
+    width: 193px;
+    margin :10px 0px 10px 10px;
+}
+
+.search-message{
+    font-family: 'Roboto', cursive;
+    position: relative;
+    text-align: center;
+    left: 50%;
+    transform: translate(-50%);
+
+}
+
+#close-search{
+    width: 20px;
+    position: absolute;
+    bottom : 3px;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+
+
+
+/*chat page*/
+
+#chat-container {
+    position: relative;
+    top: 54px;
+    background: white;
+    border: 1px dotted rgb(70, 172, 138);
+    width: 80%;
+    left: 10%;
+}
+
+#text-container {
+    align-self: center;
+    margin: 20px;
+    position: relative;
+    width: 83%;
+    height: 95px;
+    border: 1px solid black;
+}
+
+#message-container{
+    height: 75vh;
+    overflow: scroll;
+}
+
+.message-request{
+    align-content: center;
+    display: flex;
+    margin: 10px;
+    font-family: 'Roboto', cursive;
+    flex-flow: row wrap;
+}
+
+.message-image{
+    align-self: flex-end;
+    border: 1px dotted rgb(70, 172, 138);
+    width: 45px;
+    min-height: 45px;
+    height: 100%;
+    border-radius: 100%;
+}
+
+.message-content{
+    margin: 0 0 0 31px;
+    position: relative;
+    font-family: helvetica;
+    max-width: 372px;
+    width: 65%;
+    text-align: justify;
+    background: rgb(70, 172, 138);
+    padding: 15px;
+    border-radius: 25px;
+    color: white;
+}
+
+.message-date, .message-name{
+    font-family: 'Roboto', cursive;
+    position: relative;
+    margin: 2px 0 7px 10px;
+}
+
+.message-name{
+    font-style: italic;
+    font-weight: bold;
+}
+
+
+.message-date{
+    font-style: italic;
+    font-size: 10px;
+    top : -6px;
+}
+
+#comment-container {
+    background: white;
+    position: relative;
+    top: 68px;
+    width: 80%;
+    left: 10%;
+    border: 1px black dotted;
+    display: flex;
+}
+
+#name-date-container{
+    text-align: center;
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+#user-image{
+    /*left: 2px;
+    top: 2px;
+    height: 101px;
+    margin: 10px;
+    /* position: relative; */
+    /*position: relative;*/
+    width: 110px;
+    align-self: center;
+    margin-left: 20px;
+}
+
+
+#hamburger-menu img{
+    display: none;
+    z-index: 100000000;
+    color: black;
+    position: relative;
+    width: 36px;
+    left: 50%;
+    top: 5px;
+    transform: translate(-50%);
+}
+
+#menu-responsive{
+    display: flex;
+    flex-flow: column;
+}
+
+#menu-responsive-container{
+    flex-flow: column;
+    align-items: center;
+    top: 20px;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 68px;
+    z-index: 1;
+    opacity: 0.9;
+}
+
+
+#menu-responsive-overlay{
+    position: absolute;
+    background: black;
+    width: 100%;
+    top : -6px;
+    bottom : -30px;
+}
+
+
+#search-responsive-input{
+    z-index: 1;
+    padding-top: 30px;
+}
+
+#profile-page-container div{
+    font-family: 'Quattrocento Sans', sans-serif;
+    position: relative;
+}
+
+#search-responsive-input input{
+    text-align: center;
+    position: relative;
+    width: 200px;
+    height: 24px;
+    border: 1px black solid;
+}
+
+#menu-responsive{
+    z-index: 1;
+}
+
+#responsive-cross{
+    position: absolute;
+    width: 20px;
+    right: 20px;
+    top: 20px;
+    height: auto;
+}
+
+.menu-responsive-link{
+    text-decoration: none;
+    font-size: 25px;
+    margin: 30px;
+    color : white;
+    font-family: 'Quattrocento Sans', sans-serif;
+    text-align: center;
+}
+
+.menu-responsive-link:hover{
+    color: rgb(70, 172, 138);
+}
+
+#button {
+    color: white;
+    border: 1px solid white;
+    background: none;
+}
+
+.message-container:first-child{
+    margin-top : 10px;
+}
+
+.message-container{
+    margin: 50px 0 50px 0;
+}
+
+#profile-page-container #name {
+    margin-left: 22px;
+    font-family: 'Roboto', cursive;
+    display: inline-block;
+}
+
+#OP-friending{
+    display: inline-block;
+    margin-left: 20px;
+}
+
+
+
+
+
+@media all and (max-width: 680px) and (min-width: 300px) {
+
+    #comment-container{
+        flex-flow: column wrap;
+    }
+    #user-image{
+        border: 1px black solid;
+        margin-top: 10px;
+        margin-left: 0px;
+    }
+}
+
+@media all and (max-width: 860px) and (min-width: 10px) {
+    #menu, #search-input{
+        display: none;
+    }
+    #hamburger-menu img{
+        display : inline;
+    }
+    #title, #sub-title{
+        left: 68px;
+    }
+    #profile-picture-container{
+        right : 0%;
+    }
+    #nav-bar-results-container{
+        top: 132px;
+    }
+    #wrap-profilepic-profilemenu{
+        right: 25px;
+    }
+    #user-image{
+        width: 70px;
+    }
+    #profile-page-container{
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: center;
+        position: relative;
+        top: 66px;
+        padding: 0;
+        border : none;
+    }
+
+    #profile-page-container div{
+        left: 0;
+        text-align: center;
+    }
+
+
+    #name{
+        margin-left: 0;
+        margin-top: 6px;
+    }
+
+    #bio #button {
+        padding: 6px;
+    }
+    #bio #button:hover, #submit-yes-button:hover, #submit-no-button:hover{
+        color : white;
+        background: rgb(70,70,70);
+    }
+
+    #profile-page-container #name {
+        margin-left: 0px;
+        text-align: center;
+        font-family: 'Roboto', cursive;
+    }
+
+    #profile-menu{
+        right: -23%;
+    }
+
+    #profile-page-container #bio, #image-container #name{
+        margin-left: 0;
+        text-align: center;
+    }
+    #bio-container #button {
+        text-align: left;
+    }
+
+    #OP-friending{
+        margin-left: 0;
+    }
+
+    #profile-page-container #bio a{
+        margin-left: 0;
+    }
+
+    #profile-page-container #name, #profile-page-container #image-container, #profile-page-container #image  {
+        left: 50%;
+        display: inline-block;
+        position: relative;
+        transform: translate(-50%);
+    }
+    #profile-page-container #image-container, #profile-page-container #image {
+        margin-top: 20px;
+    }
+    #profile-page-container #textarea-bio{
+        float: none;
+        margin-left: 0;
+    }
+
+    #profile-page-container #submit-button-container{
+        justify-content: center;
+    }
+    #profile-page-container #submit-button-container input{
+        margin : 0 15px 0 15px;
+    }
+
+
+
+}
+
+@media all and (max-width: 460px) and (min-width: 10px) {
+    #tiny-logo #title, #tiny-logo #sub-title{
+        display: none;
+    }
+    #user-image{
+        display: none;
+    }
+    .message-content{
+        margin: 0 0 0 12px;
+        width: 57%;
+    }
+
+    .message-image{
+        width: 30px;
+        min-height: 30px;
+    }
+
+    #text-container{
+        height: 64px;
+    }
+
+    #chat-container{
+        font-size: 12px;
+    }
+    #profile-page-container #textarea-bio{
+        display: inline-block;
+        width: 100%;
+        margin-left: 0;
+    }
+    #bio-field{
+        width: 98%;
+    }
+
+    #profile-page-container #bio {
+        width: initial;
+    }
+
+    #profile-page-container{
+        width: 100%;
+        left: 0;
+        padding: 0;
+    }
+
+
+}
